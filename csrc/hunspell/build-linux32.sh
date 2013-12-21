@@ -1,6 +1,8 @@
 cd src
 
-#the combination -static-libgcc and -L. while only the static version of libstdc++ is in `pwd` makes for statically linking libstdc++
+# NOTE: the combination -static-libgcc and -L. while only the static version of libstdc++
+# is in `pwd` makes for statically linking libstdc++.
+
 ln -sf "$(g++ -print-file-name=libstdc++.a)"
 
 g++ -shared -O3 -s -static-libgcc -o ../../../linux/bin/libhunspell.so -I. -L. \
