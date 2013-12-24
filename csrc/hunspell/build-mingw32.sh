@@ -1,5 +1,5 @@
 cd src &&
-g++ -shared -O3 -s -static-libgcc -static-libstdc++ -o ../../../bin/hunspell.dll -I. \
+g++ -shared -O3 -s -static-libgcc -static-libstdc++ -o ../../../bin/mingw32/hunspell.dll -I. \
 	-DHAVE_CONFIG_H -fvisibility=hidden -DBUILDING_LIBHUNSPELL=1 \
 	affentry.cxx \
 	affixmgr.cxx \

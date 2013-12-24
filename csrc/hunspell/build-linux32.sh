@@ -5,7 +5,7 @@ cd src
 
 ln -sf "$(g++ -print-file-name=libstdc++.a)"
 
-g++ -shared -O3 -s -static-libgcc -o ../../../linux/bin/libhunspell.so -I. -L. \
+g++ -shared -O3 -s -static-libgcc -o ../../../bin/linux32/libhunspell.so -I. -L. \
 	-DHAVE_CONFIG_H -fvisibility=hidden -DBUILDING_LIBHUNSPELL=1 \
 	affentry.cxx \
 	affixmgr.cxx \
@@ -23,6 +23,7 @@ g++ -shared -O3 -s -static-libgcc -o ../../../linux/bin/libhunspell.so -I. -L. \
 rm -f libstdc++.a
 cd ../../..
 
-ldd linux/bin/libhunspell.so
+# check that libstdc++ is not a dependency
+ldd bin/linux32/libhunspell.so
 
-linux/bin/luajit hunspell.lua
+#linux/bin/luajit hunspell.lua
