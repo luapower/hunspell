@@ -7,7 +7,7 @@ v2.0 | hunspell 1.3.2 | LuaJIT 2
 
 ## `local hunspell = require'hunspell'`
 
-A ffi binding of the popular spell checking library [hunspell].
+A ffi binding of the popular spell checking library [hunspell][hunspell lib].
 
 ------------------------------------------------------------- ------------------------------------------------------------
 `hunspell.new(aff_filepath, dic_filepath[, key]) -> h`        create a hunspell instance
@@ -26,4 +26,4 @@ A ffi binding of the popular spell checking library [hunspell].
 `h:add_dic(dic_filepath[, key])`                              add a dictionary file to the hunspell instance
 ------------------------------------------------------------- ------------------------------------------------------------
 
-[hunspell]: http://hunspell.sourceforge.net/
+[hunspell lib]:    http://hunspell.sourceforge.net/
