@@ -1,6 +1,7 @@
 ---
-project: hunspell
-tagline: hunspell ffi binding
+project:     hunspell
+tagline:     hunspell ffi binding
+category:    Text Processing
 ---
 
 v2.0 | hunspell 1.3.2 | LuaJIT 2
