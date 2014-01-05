@@ -4,8 +4,6 @@ tagline:     hunspell ffi binding
 category:    Text Processing
 ---
 
-v2.0 | hunspell 1.3.2 | LuaJIT 2
-
 ## `local hunspell = require'hunspell'`
 
 A ffi binding of the popular spell checking library [hunspell][hunspell lib].
