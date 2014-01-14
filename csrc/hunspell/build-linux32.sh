@@ -5,7 +5,7 @@ cd src
 
 ln -sf "$(g++ -print-file-name=libstdc++.a)"
 
-g++ -shared -O3 -s -static-libgcc -o ../../../bin/linux32/libhunspell.so -I. -L. \
+g++ $CXXFLAGS -shared -o ../../../bin/linux32/libhunspell.so -I. -L. \
 	-DHAVE_CONFIG_H -fvisibility=hidden -DBUILDING_LIBHUNSPELL=1 \
 	affentry.cxx \
 	affixmgr.cxx \
