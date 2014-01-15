@@ -1,7 +1,6 @@
 ---
 project:     hunspell
 tagline:     hunspell ffi binding
-category:    Text Processing
 ---
 
 ## `local hunspell = require'hunspell'`
