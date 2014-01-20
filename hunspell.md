@@ -1,6 +1,6 @@
 ---
-project:     hunspell
-tagline:     hunspell ffi binding
+project: hunspell
+tagline: spell checking
 ---
 
 ## `local hunspell = require'hunspell'`
