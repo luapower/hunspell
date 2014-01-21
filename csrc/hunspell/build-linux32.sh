@@ -24,6 +24,6 @@ rm -f libstdc++.a
 cd ../../..
 
 # check that libstdc++ is not a dependency
-ldd bin/linux32/libhunspell.so
+ldd bin/linux32/libhunspell.so | grep libstdc++
 
 #linux/bin/luajit hunspell.lua
