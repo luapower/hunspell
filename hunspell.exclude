@@ -1,0 +1,14 @@
+*
+!/bin/
+!/csrc/
+!/bin/mingw32/
+!/bin/linux32/
+!/media/
+
+!/hunspell*
+!/bin/mingw32/hunspell*
+!/bin/linux32/libhunspell*
+!csrc/hunspell/
+!csrc/hunspell/**
+!media/hunspell/
+!media/hunspell/**
