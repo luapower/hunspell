@@ -1,5 +1,5 @@
 [ "$PLATFORM" ] || exit 1 # this is a template script
-cd src && $CXX -O2 -static-libstdc++ -fvisibility=hidden $CFLAGS -shared -o ../../../bin/$PLATFORM/$LIBNAME -I. \
+cd src && $CXX -O2 -fvisibility=hidden $CFLAGS -shared -o ../../../bin/$PLATFORM/$LIBNAME -I. \
 	-DHAVE_CONFIG_H -DBUILDING_LIBHUNSPELL=1 \
 	affentry.cxx \
 	affixmgr.cxx \
