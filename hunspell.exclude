@@ -20,6 +20,8 @@
 !/bin/mingw64/hunspell*
 !/bin/linux32/libhunspell*
 !/bin/linux64/libhunspell*
+!/bin/osx32/libhunspell*
+!/bin/osx64/libhunspell*
 !csrc/hunspell/
 !csrc/hunspell/**
 !media/hunspell/
