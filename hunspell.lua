@@ -142,7 +142,7 @@ ffi.metatype('Hunhandle', {__index = {
 
 if not ... then
 	local hunspell = M
-	local pp = require'pp'.pp
+	local pp = require'pp'
 
 	local h = hunspell.new(
 		'media/hunspell/en_US/en_US.aff',
