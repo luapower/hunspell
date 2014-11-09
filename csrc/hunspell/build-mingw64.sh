@@ -1,2 +1,2 @@
-PLATFORM=mingw64 LIBNAME=hunspell.dll CXX=g++ \
-    CFLAGS="-s -static -static-libgcc -static-libstdc++" ./build.sh
+P=mingw64 L="-s -static-libgcc -static-libstdc++" \
+	D=hunspell.dll A=hunspell.a ./build.sh

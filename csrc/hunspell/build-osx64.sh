@@ -1,2 +1,3 @@
-PLATFORM=osx64 LIBNAME=libhunspell.dylib CXX=g++ \
-    CFLAGS="-install_name @loader_path/libhunspell.dylib -arch x86_64 -mmacosx-version-min=10.4" ./build.sh
+export C="-arch x86_64 -mmacosx-version-min=10.4"
+P=osx64 L="$C -install_name @loader_path/libhunspell.dylib" \
+	D=libhunspell.dylib A=libhunspell.a ./build.sh

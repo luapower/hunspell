@@ -1,2 +1,2 @@
-PLATFORM=linux64 LIBNAME=libhunspell.so CXX=g++ \
-    CFLAGS="-s -static-libgcc -static-libstdc++ -fPIC" ./build.sh
+P=linux64 C=-fPIC L="-s -static-libgcc -static-libstdc++" \
+	D=libhunspell.so A=libhunspell.a ./build.sh
