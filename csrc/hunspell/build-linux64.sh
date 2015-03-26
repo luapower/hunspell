@@ -1,2 +1,2 @@
-P=linux64 C="-fPIC -include _memcpy.h" L="-s -static-libgcc -static-libstdc++" \
+P=linux64 C="-fPIC" L="-s -static-libgcc" \
 	D=libhunspell.so A=libhunspell.a ./build.sh
