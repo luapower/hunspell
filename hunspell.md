@@ -1,5 +1,4 @@
 ---
-project: hunspell
 tagline: spell checking
 ---
 
